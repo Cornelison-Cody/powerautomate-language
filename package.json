@@ -1,0 +1,25 @@
+{
+    "name": "powerautomate-language",
+    "displayName": "PowerAutomate Language",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "powerautomate",
+            "aliases": ["PowerAutomate Language", "powerautomate"],
+            "extensions": ["pa"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "powerautomate",
+            "scopeName": "source.pa",
+            "path": "./syntaxes/powerautomate.tmLanguage.json"
+        }]
+    }
+}
